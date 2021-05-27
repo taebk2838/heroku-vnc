@@ -107,7 +107,7 @@ do
    now=$(date +"%T")
    echo "Current time : $now"
    echo -e "${RED}current time :$now ${ENDCOLOR}"
-   sleep 1800
+   sleep 900
 done
 
 
