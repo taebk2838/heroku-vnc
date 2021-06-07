@@ -1,45 +1,46 @@
-# Python: Getting Started
-
-A barebones Django app, which can easily be deployed to Heroku.
-
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
-
-## Running Locally
-
-Make sure you have Python 3.9 [installed locally](https://docs.python-guide.org/starting/installation/). To push to Heroku, you'll need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), as well as [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
-
-```sh
-$ git clone https://github.com/heroku/python-getting-started.git
-$ cd python-getting-started
-
-$ python3 -m venv getting-started
-$ pip install -r requirements.txt
-
-$ createdb python_getting_started
-
-$ python manage.py migrate
-$ python manage.py collectstatic
-
-$ heroku local
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku main
-
-$ heroku run python manage.py migrate
-$ heroku open
-```
-or
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+# NoVNC-for-Heroku
+**Running a VNC server + NoVNC client on Heroku app**
 
-## Documentation
+### Features:
+  - Running on Ubuntu 18.04 Docker Image
+  - Google Chrome included
+  - Lite Desktop xfce4
+  - Easy to use
+  - Can be easily customized
+  - Support Chinese Language and Pinyin input method, check Readme.txt in Desktop
+  - Use keyboard Shift button to switch input method
+  - Modified from megatron0000/heroku-vnc
+  - Password: demo2020
+  - Display resolution setting command:
+  
+      xrandr -s 1440x900
+      
+      xrandr -s 800x600
+      
+      xrandr -s 1024x768
+      
+      xrandr -s 1200x500
+      
+      xrandr -s 1360x620
+      
+      xrandr -s 1920x1080
+      
 
-For more information about using Python on Heroku, see these Dev Center articles:
+### Installation
 
-- [Python on Heroku](https://devcenter.heroku.com/categories/python)
+##### Requirement:
+ - Docker
+ - GIT
+ - A heroku account
+ - Stable Network
+ - A blank application
+
+##### Steps: 
+Click Deploy link in the top
+
+You will be asked for the application name. After you enter the application name, everything will be done automatically. If there is no error, you can access your app at: https://yourappname.herokapp.com
+
+
+I JUST EDITIED SOME CODES I AM NOT A OWNER OF THIS FILES
+~KING REMIX
